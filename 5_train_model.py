@@ -28,9 +28,9 @@ predictions = model.predict(X_test)
 print("\n--- Model Performance Report ---")
 print(classification_report(y_test, predictions))
 
-# 5. Find the 'Smoking Guns'
 # WHAT: We look at the 'coefficients' to see which features most strongly predict churn.
 importance = pd.DataFrame({'Feature': X.columns, 'Importance': model.coef_[0]})
 print("\n--- Top Predictors of Churn ---")
 
 print(importance.sort_values(by='Importance', ascending=False).head(5))
+
