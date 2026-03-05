@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # 1. Load the Golden Data
-file_path = r"C:\Users\mansu\OneDrive\Desktop\Data Analyst Boot Camp\Data Analyst Projects\Customer_Churn_Project\Telco_Churn_Cleaned.csv"
+file_path = r"file_path = "Telco_Churn_Cleaned.csv"
 df = pd.read_csv(file_path)
 
 print("Drawing and SAVING the charts...")
@@ -38,8 +38,9 @@ axes[2].set_title('Churn vs. Tenure (Months)')
 # WHAT: We save the chart as a PNG image file.
 # WHY: This avoids the 'freezing' issue and gives you a file for your portfolio.
 plt.tight_layout()
-save_path = r"C:\Users\mansu\OneDrive\Desktop\Data Analyst Boot Camp\Data Analyst Projects\Customer_Churn_Project\Churn_Analysis_Charts.png"
+save_path = r"file_path = "Churn_Analysis_Charts.png"
 plt.savefig(save_path)
 
 
 print(f"Success! Charts saved at: {save_path}")
+
