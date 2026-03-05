@@ -1,3 +1,11 @@
+"""
+PROJECT: Customer Churn Analysis
+FILE: 2_data_cleaning.py
+AUTHOR: Mansur Mohammed
+DESCRIPTION: This script takes the raw e-commerce data, removes null values, 
+and prepares the 'Churn' column for machine learning.
+"""
+
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -32,5 +40,6 @@ axes[2].set_title('Churn vs. Tenure (Months)')
 plt.tight_layout()
 save_path = r"C:\Users\mansu\OneDrive\Desktop\Data Analyst Boot Camp\Data Analyst Projects\Customer_Churn_Project\Churn_Analysis_Charts.png"
 plt.savefig(save_path)
+
 
 print(f"Success! Charts saved at: {save_path}")
