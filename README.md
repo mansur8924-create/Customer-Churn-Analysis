@@ -1,6 +1,7 @@
 # Customer-Churn-Analysis
  
  Project Overview
+
 The objective of this project is to identify the key factors that lead to customer turnover (churn) in a telecommunications company. By analyzing customer behavior, contract types, and demographics, I developed a data-driven approach to predict which customers are most likely to leave, allowing the business to take proactive retention measures.
 
  Tools & Technologies
