@@ -4,7 +4,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import confusion_matrix, classification_report
 
 # 1. Load the ML-Ready Data
-file_path = r"C:\Users\mansu\OneDrive\Desktop\Data Analyst Boot Camp\Data Analyst Projects\Customer_Churn_Project\Telco_Churn_ML_Ready.csv"
+file_path = r"file_path = "Telco_Churn_ML_Ready.csv"
 df = pd.read_csv(file_path)
 
 # 2. Split the Data (The 'Exam' Strategy)
@@ -32,4 +32,5 @@ print(classification_report(y_test, predictions))
 # WHAT: We look at the 'coefficients' to see which features most strongly predict churn.
 importance = pd.DataFrame({'Feature': X.columns, 'Importance': model.coef_[0]})
 print("\n--- Top Predictors of Churn ---")
+
 print(importance.sort_values(by='Importance', ascending=False).head(5))
